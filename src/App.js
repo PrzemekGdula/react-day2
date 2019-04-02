@@ -1,10 +1,18 @@
 import React from 'react'
-import Header from './Header'
+
+import Calculator from './Calculator'
+
+
 
 const App = () => {
     return (
         <div>
-           
+            <Calculator
+           a={5}
+           b={11}
+           />
+
+
         </div>
     )
 }
