@@ -1,9 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import Calculators from './Calculators'
+import Calculators from './views/Calculators'
 
-import Home from './Home'
+import Home from './views/Home'
+import DisplayName from './views/DisplayName/DisplayName'
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             </div>
             <Route exact={true} path={'/'} component={Home} />
             <Route path={'/calculators'} component={Calculators} />
+            <Route path={'/display-name/:name?'} component={DisplayName} />
         </Router>
     )
 }
