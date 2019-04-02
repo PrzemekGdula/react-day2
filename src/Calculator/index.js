@@ -1,0 +1,1 @@
+export {default} from './Calculator'//trzeba tak napisac jesli komponenty przenosimy do innego folderu

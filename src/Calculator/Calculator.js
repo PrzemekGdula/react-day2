@@ -1,6 +1,6 @@
 import React from 'react'
 import Add from './Add';
-import Multiply from './Multiply';
+import Multiply from './Multiply'
 import Divide from './Divide'
 import Substract from './Substract'
 
