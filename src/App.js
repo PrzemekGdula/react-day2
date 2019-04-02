@@ -6,11 +6,13 @@ import Calculators from './views/Calculators'
 import Home from './views/Home'
 import DisplayName from './views/DisplayName/DisplayName'
 import MUIPlayground from './views/MUIplaygroung/MUIplaygroung'
+import Navigation from './views/Navigation/Navigation'
 
 
 const App = () => {
     return (
         <Router>
+            <Navigation />
             <div>
                 <ul>
                     <li>
