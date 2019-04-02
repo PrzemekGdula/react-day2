@@ -1,13 +1,18 @@
 import React from 'react'
 import Name from './Name'
 
-const Header = () => {
-    return (
-        <div>
-            Nazywam sie
-            <Name/>
-        </div>
-    )
-}
+const Header = (props) => (
+    <div>
+        Nazywam sie
+
+        <Name
+            name={props.firstName + ' ' + props.lastName}
+        />
+        <Name
+            name={'Ala'}
+        />
+    </div>
+)
+
 
 export default Header

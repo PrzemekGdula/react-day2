@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Name = () => {
-    return (
-        <div>
-            Przemek Gdula
-        </div>
-    )
-}
+const Name = (props) => (
+  <div>
+    {props.name}
+  </div>
+)
 
 export default Name

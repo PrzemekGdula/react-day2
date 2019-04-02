@@ -4,7 +4,10 @@ import Header from './Header'
 const App = () => {
     return (
         <div>
-            <Header/>
+            <Header
+            firstName={'Mateusz'}
+            lastName={'Choma'}
+            />
         </div>
     )
 }
