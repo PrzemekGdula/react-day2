@@ -1,30 +1,15 @@
 import React from 'react'
 
-import Calculator from './Calculator'
+import Calculators from './Calculators'
 
-
-const numbers = [
-    { a: 5, b: 10 },
-    { a: 7, b: 12 },
-    { a: 3, b: 11 },
-]
+import Home from './Home'
 
 
 const App = () => {
     return (
         <div>
-            {
-                numbers.map(
-                    element => (
-                        <Calculator
-                            a={element.a}
-                            b={element.b}
-                        />
-                    )
-                )
-            }
-
-
+            <Home />
+            <Calculators />
         </div>
     )
 }
