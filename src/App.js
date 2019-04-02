@@ -5,6 +5,7 @@ import Calculators from './views/Calculators'
 
 import Home from './views/Home'
 import DisplayName from './views/DisplayName/DisplayName'
+import MUIPlayground from './views/MUIplaygroung/MUIplaygroung'
 
 
 const App = () => {
@@ -18,11 +19,15 @@ const App = () => {
                     <li>
                         <Link to="/Calculators">Calculators</Link>
                     </li>
+                    <li>
+                        <Link to="/mui">MUI Playground</Link>
+                    </li>
                 </ul>
             </div>
             <Route exact={true} path={'/'} component={Home} />
             <Route path={'/calculators'} component={Calculators} />
             <Route path={'/display-name/:name?'} component={DisplayName} />
+            <Route path={'/mui'} component={MUIPlayground} />
         </Router>
     )
 }
